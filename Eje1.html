@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tu peso en un lugar donde pesas menos</title>
+  </head>
+  <body>
+    <h1> Tu peso en otro planeta </h1>
+    <p>En la terra pesas distinto a marte </p>
+     <!-- estos codigos son de javascript -->
+     <script>
+        var usuario = prompt("Cual es tu peso");
+        var planeta = parseInt(prompt("Elige tu planeta. 1 es martes , 2 es jupiter"));
+        var  g_tierra = 9.8; //VARIABLE TIPO FLOAT (decimales)
+        var  g_marte = 3.7;
+        var  g_jupiter = 24.8;
+        var peso = 77;
+        var peso_final; //variable tipo INT (enteros)
+        peso_final = peso * g_marte/ g_tierra;
+        // <!-- al utilizar numeros y no queiro que sean extensos
+        // puedo utilizar  parseInt PRIMERA OPCION-->
+        // peso_final = parseInt(peso_final);
+        // document.write(peso_final);
+        //la FUNCION PARSEINT convierte la variables de tipo float (decimales a tipo int(entero))
+        //En cambio PARSEFLOAT hace lo contario
+        //SEGUNDA OPCION
+        peso_fonal = (peso_final.toFixed(2));
+        document.write(peso_final);
+     </script>
+  </body>
+</html>
